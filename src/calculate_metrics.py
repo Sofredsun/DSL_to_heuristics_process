@@ -143,8 +143,8 @@ def calculate_graph_metrics(G, per_project=False, project_subgraphs=None):
 
 if __name__ == "__main__":
     BASE_DIR = Path(__file__).resolve().parent.parent
-    output_dir = BASE_DIR/"DSL description L2"/"case_metrics.xlsx"
-    data_dir = BASE_DIR/"data"
+    output_dir = BASE_DIR/"data"/"references"/"case_metrics.xlsx"
+    data_dir = BASE_DIR/"data"/"processed"
     files = [
         (str(data_dir/"Case1_PSPLIB_j301_1.json"), False),
         (str(data_dir/"Case2_sch50.json"), False),
