@@ -1,0 +1,625 @@
+{
+  "case_info": {
+    "id": "sch50_instance_1_h02",
+    "source": "OR-Library",
+    "description": "Restricted single-machine common due date problem",
+    "type": "Single Machine / JIT Scheduling"
+  },
+  "parameters": {
+    "num_jobs": 50,
+    "h_factor": 0.6,
+    "total_duration": 533,
+    "common_due_date": 106,
+    "common_due_date_formula": "round(total_duration * h_factor)"
+  },
+  "resources": [
+    {
+      "id": 1,
+      "name": "Machine",
+      "capacity": 1,
+      "type": "renewable"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 1,
+      "duration": 11,
+      "penalties": {
+        "earliness_unit_penalty": 10,
+        "tardiness_unit_penalty": 5
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 2,
+      "duration": 6,
+      "penalties": {
+        "earliness_unit_penalty": 3,
+        "tardiness_unit_penalty": 13
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 3,
+      "duration": 3,
+      "penalties": {
+        "earliness_unit_penalty": 9,
+        "tardiness_unit_penalty": 7
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 4,
+      "duration": 6,
+      "penalties": {
+        "earliness_unit_penalty": 6,
+        "tardiness_unit_penalty": 4
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 5,
+      "duration": 14,
+      "penalties": {
+        "earliness_unit_penalty": 10,
+        "tardiness_unit_penalty": 1
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 6,
+      "duration": 6,
+      "penalties": {
+        "earliness_unit_penalty": 6,
+        "tardiness_unit_penalty": 15
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 7,
+      "duration": 4,
+      "penalties": {
+        "earliness_unit_penalty": 3,
+        "tardiness_unit_penalty": 2
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 8,
+      "duration": 19,
+      "penalties": {
+        "earliness_unit_penalty": 6,
+        "tardiness_unit_penalty": 13
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 9,
+      "duration": 20,
+      "penalties": {
+        "earliness_unit_penalty": 7,
+        "tardiness_unit_penalty": 10
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 10,
+      "duration": 11,
+      "penalties": {
+        "earliness_unit_penalty": 4,
+        "tardiness_unit_penalty": 14
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 11,
+      "duration": 3,
+      "penalties": {
+        "earliness_unit_penalty": 6,
+        "tardiness_unit_penalty": 12
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 12,
+      "duration": 14,
+      "penalties": {
+        "earliness_unit_penalty": 3,
+        "tardiness_unit_penalty": 4
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 13,
+      "duration": 6,
+      "penalties": {
+        "earliness_unit_penalty": 7,
+        "tardiness_unit_penalty": 4
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 14,
+      "duration": 16,
+      "penalties": {
+        "earliness_unit_penalty": 4,
+        "tardiness_unit_penalty": 10
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 15,
+      "duration": 3,
+      "penalties": {
+        "earliness_unit_penalty": 2,
+        "tardiness_unit_penalty": 13
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 16,
+      "duration": 5,
+      "penalties": {
+        "earliness_unit_penalty": 4,
+        "tardiness_unit_penalty": 9
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 17,
+      "duration": 16,
+      "penalties": {
+        "earliness_unit_penalty": 4,
+        "tardiness_unit_penalty": 5
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 18,
+      "duration": 8,
+      "penalties": {
+        "earliness_unit_penalty": 1,
+        "tardiness_unit_penalty": 7
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 19,
+      "duration": 15,
+      "penalties": {
+        "earliness_unit_penalty": 5,
+        "tardiness_unit_penalty": 7
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 20,
+      "duration": 1,
+      "penalties": {
+        "earliness_unit_penalty": 8,
+        "tardiness_unit_penalty": 14
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 21,
+      "duration": 6,
+      "penalties": {
+        "earliness_unit_penalty": 7,
+        "tardiness_unit_penalty": 12
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 22,
+      "duration": 17,
+      "penalties": {
+        "earliness_unit_penalty": 5,
+        "tardiness_unit_penalty": 11
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 23,
+      "duration": 19,
+      "penalties": {
+        "earliness_unit_penalty": 8,
+        "tardiness_unit_penalty": 9
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 24,
+      "duration": 10,
+      "penalties": {
+        "earliness_unit_penalty": 4,
+        "tardiness_unit_penalty": 7
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 25,
+      "duration": 9,
+      "penalties": {
+        "earliness_unit_penalty": 3,
+        "tardiness_unit_penalty": 9
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 26,
+      "duration": 10,
+      "penalties": {
+        "earliness_unit_penalty": 1,
+        "tardiness_unit_penalty": 6
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 27,
+      "duration": 16,
+      "penalties": {
+        "earliness_unit_penalty": 9,
+        "tardiness_unit_penalty": 10
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 28,
+      "duration": 4,
+      "penalties": {
+        "earliness_unit_penalty": 9,
+        "tardiness_unit_penalty": 8
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 29,
+      "duration": 4,
+      "penalties": {
+        "earliness_unit_penalty": 2,
+        "tardiness_unit_penalty": 12
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 30,
+      "duration": 19,
+      "penalties": {
+        "earliness_unit_penalty": 5,
+        "tardiness_unit_penalty": 12
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 31,
+      "duration": 14,
+      "penalties": {
+        "earliness_unit_penalty": 4,
+        "tardiness_unit_penalty": 13
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 32,
+      "duration": 3,
+      "penalties": {
+        "earliness_unit_penalty": 5,
+        "tardiness_unit_penalty": 11
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 33,
+      "duration": 20,
+      "penalties": {
+        "earliness_unit_penalty": 7,
+        "tardiness_unit_penalty": 9
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 34,
+      "duration": 12,
+      "penalties": {
+        "earliness_unit_penalty": 1,
+        "tardiness_unit_penalty": 4
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 35,
+      "duration": 17,
+      "penalties": {
+        "earliness_unit_penalty": 5,
+        "tardiness_unit_penalty": 2
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 36,
+      "duration": 5,
+      "penalties": {
+        "earliness_unit_penalty": 3,
+        "tardiness_unit_penalty": 7
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 37,
+      "duration": 19,
+      "penalties": {
+        "earliness_unit_penalty": 6,
+        "tardiness_unit_penalty": 3
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 38,
+      "duration": 14,
+      "penalties": {
+        "earliness_unit_penalty": 1,
+        "tardiness_unit_penalty": 11
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 39,
+      "duration": 18,
+      "penalties": {
+        "earliness_unit_penalty": 4,
+        "tardiness_unit_penalty": 14
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 40,
+      "duration": 18,
+      "penalties": {
+        "earliness_unit_penalty": 1,
+        "tardiness_unit_penalty": 12
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 41,
+      "duration": 20,
+      "penalties": {
+        "earliness_unit_penalty": 7,
+        "tardiness_unit_penalty": 9
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 42,
+      "duration": 17,
+      "penalties": {
+        "earliness_unit_penalty": 3,
+        "tardiness_unit_penalty": 10
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 43,
+      "duration": 4,
+      "penalties": {
+        "earliness_unit_penalty": 6,
+        "tardiness_unit_penalty": 5
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 44,
+      "duration": 1,
+      "penalties": {
+        "earliness_unit_penalty": 6,
+        "tardiness_unit_penalty": 9
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 45,
+      "duration": 8,
+      "penalties": {
+        "earliness_unit_penalty": 6,
+        "tardiness_unit_penalty": 6
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 46,
+      "duration": 8,
+      "penalties": {
+        "earliness_unit_penalty": 2,
+        "tardiness_unit_penalty": 10
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 47,
+      "duration": 18,
+      "penalties": {
+        "earliness_unit_penalty": 10,
+        "tardiness_unit_penalty": 8
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 48,
+      "duration": 20,
+      "penalties": {
+        "earliness_unit_penalty": 2,
+        "tardiness_unit_penalty": 7
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 49,
+      "duration": 6,
+      "penalties": {
+        "earliness_unit_penalty": 8,
+        "tardiness_unit_penalty": 9
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    },
+    {
+      "id": 50,
+      "duration": 6,
+      "penalties": {
+        "earliness_unit_penalty": 8,
+        "tardiness_unit_penalty": 2
+      },
+      "resources_required": {
+        "1": 1
+      },
+      "predecessors": []
+    }
+  ]
+}

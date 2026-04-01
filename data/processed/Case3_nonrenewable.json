@@ -1,0 +1,3617 @@
+{
+  "case_info": {
+    "id": "file11.txt",
+    "source": "4TU",
+    "description": "RCPSP with 5 renewable resources and 2 nonrenewable resources",
+    "type": "RCPSP with Non-Renewable Resources"
+  },
+  "project_goal": {
+    "objective_function": "Minimization of Makespan"
+  },
+  "resources": [
+    {
+      "id": 1,
+      "name": "RR1",
+      "capacity": 10,
+      "type": "renewable"
+    },
+    {
+      "id": 2,
+      "name": "RR2",
+      "capacity": 10,
+      "type": "renewable"
+    },
+    {
+      "id": 3,
+      "name": "RR3",
+      "capacity": 10,
+      "type": "renewable"
+    },
+    {
+      "id": 4,
+      "name": "RR4",
+      "capacity": 10,
+      "type": "renewable"
+    },
+    {
+      "id": 5,
+      "name": "RR5",
+      "capacity": 10,
+      "type": "renewable"
+    },
+    {
+      "id": 6,
+      "name": "NRR1",
+      "initial_stock": 580,
+      "type": "nonrenewable"
+    },
+    {
+      "id": 7,
+      "name": "NRR2",
+      "initial_stock": 596,
+      "type": "nonrenewable"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 0,
+      "name": "Supersource",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {},
+      "precedences": {
+        "time_successors": [
+          1,
+          13,
+          25,
+          37,
+          49
+        ],
+        "selection_groups": [
+          [
+            1,
+            37,
+            13,
+            49,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "name": "Activity 1",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 8,
+          "production": 0
+        },
+        "7": {
+          "consumption": 10,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          2,
+          3,
+          4,
+          6
+        ],
+        "selection_groups": [
+          [
+            6
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Activity 2",
+      "duration": 4,
+      "resources_required": {
+        "1": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 23,
+          "production": 0
+        },
+        "7": {
+          "consumption": 8,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          11,
+          10,
+          9,
+          8,
+          5
+        ],
+        "selection_groups": [
+          [
+            5
+          ],
+          [
+            11
+          ],
+          [
+            8
+          ],
+          [
+            9
+          ],
+          [
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Activity 3",
+      "duration": 3,
+      "resources_required": {
+        "1": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 18,
+          "production": 0
+        },
+        "7": {
+          "consumption": 11,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          10,
+          9,
+          5
+        ],
+        "selection_groups": [
+          [
+            5
+          ],
+          [
+            10
+          ],
+          [
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "name": "Activity 4",
+      "duration": 7,
+      "resources_required": {
+        "1": 6
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 8
+        },
+        "7": {
+          "consumption": 5,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          8,
+          7
+        ],
+        "selection_groups": [
+          [
+            8
+          ],
+          [
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "name": "Activity 5",
+      "duration": 3,
+      "resources_required": {
+        "1": 1
+      },
+      "resource_consumption": {
+        "7": {
+          "consumption": 0,
+          "production": 6
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          7
+        ],
+        "selection_groups": [
+          [
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "name": "Activity 6",
+      "duration": 2,
+      "resources_required": {
+        "1": 2
+      },
+      "resource_consumption": {
+        "7": {
+          "consumption": 10,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          8,
+          58
+        ],
+        "selection_groups": [
+          [
+            58
+          ],
+          [
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "name": "Activity 7",
+      "duration": 4,
+      "resources_required": {
+        "1": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 16
+        },
+        "7": {
+          "consumption": 0,
+          "production": 10
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          12
+        ],
+        "selection_groups": [
+          [
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "name": "Activity 8",
+      "duration": 8,
+      "resources_required": {
+        "1": 3
+      },
+      "resource_consumption": {
+        "7": {
+          "consumption": 0,
+          "production": 13
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          12
+        ],
+        "selection_groups": [
+          [
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "name": "Activity 9",
+      "duration": 1,
+      "resources_required": {
+        "1": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 9
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          12
+        ],
+        "selection_groups": [
+          [
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "name": "Activity 10",
+      "duration": 4,
+      "resources_required": {
+        "1": 2
+      },
+      "resource_consumption": {},
+      "precedences": {
+        "time_successors": [
+          12
+        ],
+        "selection_groups": [
+          [
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "name": "Activity 11",
+      "duration": 7,
+      "resources_required": {
+        "1": 5
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 7
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          12
+        ],
+        "selection_groups": [
+          [
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "name": "Activity 12",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 9
+        },
+        "7": {
+          "consumption": 0,
+          "production": 15
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          61
+        ],
+        "selection_groups": [
+          [
+            61
+          ]
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "name": "Activity 13",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 6,
+          "production": 0
+        },
+        "7": {
+          "consumption": 7,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "selection_groups": [
+          [
+            17
+          ],
+          [
+            16
+          ],
+          [
+            19
+          ],
+          [
+            15
+          ],
+          [
+            18
+          ],
+          [
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "name": "Activity 14",
+      "duration": 2,
+      "resources_required": {
+        "4": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 16,
+          "production": 6
+        },
+        "7": {
+          "consumption": 13,
+          "production": 7
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          23,
+          20
+        ],
+        "selection_groups": [
+          [
+            23
+          ],
+          [
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "name": "Activity 15",
+      "duration": 1,
+      "resources_required": {
+        "4": 3
+      },
+      "resource_consumption": {
+        "7": {
+          "consumption": 5,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          23,
+          20
+        ],
+        "selection_groups": [
+          [
+            20
+          ],
+          [
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "name": "Activity 16",
+      "duration": 2,
+      "resources_required": {
+        "4": 3
+      },
+      "resource_consumption": {},
+      "precedences": {
+        "time_successors": [
+          21,
+          20
+        ],
+        "selection_groups": [
+          [
+            20
+          ],
+          [
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "name": "Activity 17",
+      "duration": 7,
+      "resources_required": {
+        "4": 3
+      },
+      "resource_consumption": {
+        "7": {
+          "consumption": 5,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          23,
+          22
+        ],
+        "selection_groups": [
+          [
+            23
+          ],
+          [
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "name": "Activity 18",
+      "duration": 10,
+      "resources_required": {
+        "4": 5
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 6,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          21
+        ],
+        "selection_groups": [
+          [
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "name": "Activity 19",
+      "duration": 9,
+      "resources_required": {
+        "4": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 9,
+          "production": 0
+        },
+        "7": {
+          "consumption": 9,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          20
+        ],
+        "selection_groups": [
+          [
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "name": "Activity 20",
+      "duration": 6,
+      "resources_required": {
+        "4": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 8
+        },
+        "7": {
+          "consumption": 0,
+          "production": 9
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          22
+        ],
+        "selection_groups": [
+          [
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "name": "Activity 21",
+      "duration": 10,
+      "resources_required": {
+        "4": 2
+      },
+      "resource_consumption": {},
+      "precedences": {
+        "time_successors": [
+          22
+        ],
+        "selection_groups": [
+          [
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "name": "Activity 22",
+      "duration": 3,
+      "resources_required": {
+        "4": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 17
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          24
+        ],
+        "selection_groups": [
+          [
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "name": "Activity 23",
+      "duration": 2,
+      "resources_required": {
+        "4": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 5,
+          "production": 0
+        },
+        "7": {
+          "consumption": 0,
+          "production": 7
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          24
+        ],
+        "selection_groups": [
+          [
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "name": "Activity 24",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 11
+        },
+        "7": {
+          "consumption": 0,
+          "production": 16
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          61
+        ],
+        "selection_groups": [
+          [
+            61
+          ]
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "name": "Activity 25",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "7": {
+          "consumption": 15,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          26,
+          28,
+          29,
+          35
+        ],
+        "selection_groups": [
+          [
+            26
+          ],
+          [
+            35
+          ],
+          [
+            29
+          ],
+          [
+            28
+          ]
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "name": "Activity 26",
+      "duration": 8,
+      "resources_required": {
+        "3": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 11,
+          "production": 0
+        },
+        "7": {
+          "consumption": 18,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          34,
+          31,
+          30,
+          27
+        ],
+        "selection_groups": [
+          [
+            30
+          ],
+          [
+            34
+          ],
+          [
+            31
+          ],
+          [
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "name": "Activity 27",
+      "duration": 7,
+      "resources_required": {
+        "3": 4
+      },
+      "resource_consumption": {},
+      "precedences": {
+        "time_successors": [
+          33,
+          32
+        ],
+        "selection_groups": [
+          [
+            33
+          ],
+          [
+            32
+          ]
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "name": "Activity 28",
+      "duration": 4,
+      "resources_required": {
+        "3": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 7,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          31,
+          30
+        ],
+        "selection_groups": [
+          [
+            31
+          ],
+          [
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "name": "Activity 29",
+      "duration": 2,
+      "resources_required": {
+        "3": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 8,
+          "production": 0
+        },
+        "7": {
+          "consumption": 0,
+          "production": 7
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          30
+        ],
+        "selection_groups": [
+          [
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "name": "Activity 30",
+      "duration": 8,
+      "resources_required": {
+        "3": 5
+      },
+      "resource_consumption": {
+        "7": {
+          "consumption": 0,
+          "production": 8
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          36
+        ],
+        "selection_groups": [
+          [
+            36
+          ]
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "name": "Activity 31",
+      "duration": 6,
+      "resources_required": {
+        "3": 2
+      },
+      "resource_consumption": {},
+      "precedences": {
+        "time_successors": [
+          36
+        ],
+        "selection_groups": [
+          [
+            36
+          ]
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "name": "Activity 32",
+      "duration": 9,
+      "resources_required": {
+        "3": 1
+      },
+      "resource_consumption": {},
+      "precedences": {
+        "time_successors": [
+          36
+        ],
+        "selection_groups": [
+          [
+            36
+          ]
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "name": "Activity 33",
+      "duration": 2,
+      "resources_required": {
+        "3": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 6
+        },
+        "7": {
+          "consumption": 0,
+          "production": 10
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          36
+        ],
+        "selection_groups": [
+          [
+            36
+          ]
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "name": "Activity 34",
+      "duration": 4,
+      "resources_required": {
+        "3": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 5
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          36
+        ],
+        "selection_groups": [
+          [
+            36
+          ]
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "name": "Activity 35",
+      "duration": 4,
+      "resources_required": {
+        "3": 3
+      },
+      "resource_consumption": {},
+      "precedences": {
+        "time_successors": [
+          36
+        ],
+        "selection_groups": [
+          [
+            36
+          ]
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "name": "Activity 36",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 15
+        },
+        "7": {
+          "consumption": 0,
+          "production": 8
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          61
+        ],
+        "selection_groups": [
+          [
+            61
+          ]
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "name": "Activity 37",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 20,
+          "production": 0
+        },
+        "7": {
+          "consumption": 16,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          38,
+          39,
+          40,
+          41,
+          42,
+          46,
+          47
+        ],
+        "selection_groups": [
+          [
+            41
+          ],
+          [
+            38
+          ],
+          [
+            47
+          ],
+          [
+            40
+          ],
+          [
+            46
+          ],
+          [
+            42
+          ],
+          [
+            39
+          ]
+        ]
+      }
+    },
+    {
+      "id": 38,
+      "name": "Activity 38",
+      "duration": 1,
+      "resources_required": {
+        "5": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 10,
+          "production": 6
+        },
+        "7": {
+          "consumption": 8,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          45,
+          43
+        ],
+        "selection_groups": [
+          [
+            45
+          ],
+          [
+            43
+          ]
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "name": "Activity 39",
+      "duration": 10,
+      "resources_required": {
+        "5": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 14,
+          "production": 6
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          45,
+          44
+        ],
+        "selection_groups": [
+          [
+            45
+          ],
+          [
+            44
+          ]
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "name": "Activity 40",
+      "duration": 4,
+      "resources_required": {
+        "5": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 8
+        },
+        "7": {
+          "consumption": 15,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          43
+        ],
+        "selection_groups": [
+          [
+            43
+          ]
+        ]
+      }
+    },
+    {
+      "id": 41,
+      "name": "Activity 41",
+      "duration": 2,
+      "resources_required": {
+        "5": 2
+      },
+      "resource_consumption": {
+        "7": {
+          "consumption": 0,
+          "production": 8
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          43
+        ],
+        "selection_groups": [
+          [
+            43
+          ]
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "name": "Activity 42",
+      "duration": 8,
+      "resources_required": {
+        "5": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 10,
+          "production": 0
+        },
+        "7": {
+          "consumption": 25,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          43
+        ],
+        "selection_groups": [
+          [
+            43
+          ]
+        ]
+      }
+    },
+    {
+      "id": 43,
+      "name": "Activity 43",
+      "duration": 8,
+      "resources_required": {
+        "5": 6
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 8,
+          "production": 0
+        },
+        "7": {
+          "consumption": 0,
+          "production": 15
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          44
+        ],
+        "selection_groups": [
+          [
+            44
+          ]
+        ]
+      }
+    },
+    {
+      "id": 44,
+      "name": "Activity 44",
+      "duration": 3,
+      "resources_required": {
+        "5": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 18
+        },
+        "7": {
+          "consumption": 0,
+          "production": 25
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          48
+        ],
+        "selection_groups": [
+          [
+            48
+          ]
+        ]
+      }
+    },
+    {
+      "id": 45,
+      "name": "Activity 45",
+      "duration": 7,
+      "resources_required": {
+        "5": 4
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 16
+        },
+        "7": {
+          "consumption": 10,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          48
+        ],
+        "selection_groups": [
+          [
+            48
+          ]
+        ]
+      }
+    },
+    {
+      "id": 46,
+      "name": "Activity 46",
+      "duration": 3,
+      "resources_required": {
+        "5": 1
+      },
+      "resource_consumption": {
+        "7": {
+          "consumption": 7,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          48
+        ],
+        "selection_groups": [
+          [
+            48
+          ]
+        ]
+      }
+    },
+    {
+      "id": 47,
+      "name": "Activity 47",
+      "duration": 9,
+      "resources_required": {
+        "5": 1
+      },
+      "resource_consumption": {},
+      "precedences": {
+        "time_successors": [
+          48
+        ],
+        "selection_groups": [
+          [
+            48
+          ]
+        ]
+      }
+    },
+    {
+      "id": 48,
+      "name": "Activity 48",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 8
+        },
+        "7": {
+          "consumption": 0,
+          "production": 33
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          61
+        ],
+        "selection_groups": [
+          [
+            61
+          ]
+        ]
+      }
+    },
+    {
+      "id": 49,
+      "name": "Activity 49",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 22,
+          "production": 0
+        },
+        "7": {
+          "consumption": 14,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          50,
+          51,
+          53,
+          54
+        ],
+        "selection_groups": [
+          [
+            53
+          ],
+          [
+            51
+          ],
+          [
+            50
+          ],
+          [
+            54
+          ]
+        ]
+      }
+    },
+    {
+      "id": 50,
+      "name": "Activity 50",
+      "duration": 4,
+      "resources_required": {
+        "4": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 19,
+          "production": 9
+        },
+        "7": {
+          "consumption": 7,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          59,
+          57,
+          55,
+          52
+        ],
+        "selection_groups": [
+          [
+            55
+          ],
+          [
+            52
+          ],
+          [
+            57
+          ],
+          [
+            59
+          ]
+        ]
+      }
+    },
+    {
+      "id": 51,
+      "name": "Activity 51",
+      "duration": 1,
+      "resources_required": {
+        "4": 4
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 7,
+          "production": 6
+        },
+        "7": {
+          "consumption": 18,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          57,
+          56,
+          55
+        ],
+        "selection_groups": [
+          [
+            57
+          ],
+          [
+            56
+          ],
+          [
+            55
+          ]
+        ]
+      }
+    },
+    {
+      "id": 52,
+      "name": "Activity 52",
+      "duration": 5,
+      "resources_required": {
+        "4": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 5,
+          "production": 12
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          56
+        ],
+        "selection_groups": [
+          [
+            56
+          ]
+        ]
+      }
+    },
+    {
+      "id": 53,
+      "name": "Activity 53",
+      "duration": 9,
+      "resources_required": {
+        "4": 3
+      },
+      "resource_consumption": {},
+      "precedences": {
+        "time_successors": [
+          58
+        ],
+        "selection_groups": [
+          [
+            58
+          ]
+        ]
+      }
+    },
+    {
+      "id": 54,
+      "name": "Activity 54",
+      "duration": 7,
+      "resources_required": {
+        "4": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 5,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          55
+        ],
+        "selection_groups": [
+          [
+            55
+          ]
+        ]
+      }
+    },
+    {
+      "id": 55,
+      "name": "Activity 55",
+      "duration": 4,
+      "resources_required": {
+        "4": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 14
+        },
+        "7": {
+          "consumption": 0,
+          "production": 13
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          60
+        ],
+        "selection_groups": [
+          [
+            60
+          ]
+        ]
+      }
+    },
+    {
+      "id": 56,
+      "name": "Activity 56",
+      "duration": 2,
+      "resources_required": {
+        "4": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 17
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          60
+        ],
+        "selection_groups": [
+          [
+            60
+          ]
+        ]
+      }
+    },
+    {
+      "id": 57,
+      "name": "Activity 57",
+      "duration": 6,
+      "resources_required": {
+        "4": 2
+      },
+      "resource_consumption": {
+        "7": {
+          "consumption": 0,
+          "production": 26
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          60
+        ],
+        "selection_groups": [
+          [
+            60
+          ]
+        ]
+      }
+    },
+    {
+      "id": 58,
+      "name": "Activity 58",
+      "duration": 3,
+      "resources_required": {
+        "4": 4
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 8,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          60
+        ],
+        "selection_groups": [
+          [
+            60
+          ]
+        ]
+      }
+    },
+    {
+      "id": 59,
+      "name": "Activity 59",
+      "duration": 9,
+      "resources_required": {
+        "4": 2
+      },
+      "resource_consumption": {},
+      "precedences": {
+        "time_successors": [
+          60
+        ],
+        "selection_groups": [
+          [
+            60
+          ]
+        ]
+      }
+    },
+    {
+      "id": 60,
+      "name": "Activity 60",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 8
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          61
+        ],
+        "selection_groups": [
+          [
+            61
+          ]
+        ]
+      }
+    },
+    {
+      "id": 61,
+      "name": "Activity 61",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 58,
+          "production": 0
+        },
+        "7": {
+          "consumption": 48,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          62,
+          74
+        ],
+        "selection_groups": [
+          [
+            74,
+            62
+          ]
+        ]
+      }
+    },
+    {
+      "id": 62,
+      "name": "Activity 62",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 6,
+          "production": 0
+        },
+        "7": {
+          "consumption": 6,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          63,
+          64
+        ],
+        "selection_groups": [
+          [
+            64
+          ],
+          [
+            63
+          ]
+        ]
+      }
+    },
+    {
+      "id": 63,
+      "name": "Activity 63",
+      "duration": 5,
+      "resources_required": {
+        "3": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 13,
+          "production": 0
+        },
+        "7": {
+          "consumption": 27,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          67,
+          66,
+          65
+        ],
+        "selection_groups": [
+          [
+            67
+          ],
+          [
+            66
+          ],
+          [
+            65
+          ]
+        ]
+      }
+    },
+    {
+      "id": 64,
+      "name": "Activity 64",
+      "duration": 8,
+      "resources_required": {
+        "3": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 10,
+          "production": 0
+        },
+        "7": {
+          "consumption": 8,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          67,
+          66,
+          65
+        ],
+        "selection_groups": [
+          [
+            66
+          ],
+          [
+            67
+          ],
+          [
+            65
+          ]
+        ]
+      }
+    },
+    {
+      "id": 65,
+      "name": "Activity 65",
+      "duration": 1,
+      "resources_required": {
+        "3": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 14,
+          "production": 10
+        },
+        "7": {
+          "consumption": 7,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          72,
+          71,
+          70,
+          69,
+          68
+        ],
+        "selection_groups": [
+          [
+            68
+          ],
+          [
+            71
+          ],
+          [
+            72
+          ],
+          [
+            70
+          ],
+          [
+            69
+          ]
+        ]
+      }
+    },
+    {
+      "id": 66,
+      "name": "Activity 66",
+      "duration": 5,
+      "resources_required": {
+        "3": 3
+      },
+      "resource_consumption": {
+        "7": {
+          "consumption": 21,
+          "production": 7
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          72,
+          71,
+          70,
+          69,
+          68
+        ],
+        "selection_groups": [
+          [
+            71
+          ],
+          [
+            72
+          ],
+          [
+            68
+          ],
+          [
+            69
+          ],
+          [
+            70
+          ]
+        ]
+      }
+    },
+    {
+      "id": 67,
+      "name": "Activity 67",
+      "duration": 9,
+      "resources_required": {
+        "3": 5
+      },
+      "resource_consumption": {
+        "7": {
+          "consumption": 0,
+          "production": 10
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          72,
+          71,
+          70,
+          69,
+          68
+        ],
+        "selection_groups": [
+          [
+            68
+          ],
+          [
+            72
+          ],
+          [
+            71
+          ],
+          [
+            70
+          ],
+          [
+            69
+          ]
+        ]
+      }
+    },
+    {
+      "id": 68,
+      "name": "Activity 68",
+      "duration": 8,
+      "resources_required": {
+        "3": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 9
+        },
+        "7": {
+          "consumption": 0,
+          "production": 7
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          73
+        ],
+        "selection_groups": [
+          [
+            73
+          ]
+        ]
+      }
+    },
+    {
+      "id": 69,
+      "name": "Activity 69",
+      "duration": 7,
+      "resources_required": {
+        "3": 4
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 9,
+          "production": 12
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          73
+        ],
+        "selection_groups": [
+          [
+            73
+          ]
+        ]
+      }
+    },
+    {
+      "id": 70,
+      "name": "Activity 70",
+      "duration": 8,
+      "resources_required": {
+        "3": 1
+      },
+      "resource_consumption": {
+        "7": {
+          "consumption": 6,
+          "production": 7
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          73
+        ],
+        "selection_groups": [
+          [
+            73
+          ]
+        ]
+      }
+    },
+    {
+      "id": 71,
+      "name": "Activity 71",
+      "duration": 1,
+      "resources_required": {
+        "3": 1
+      },
+      "resource_consumption": {
+        "7": {
+          "consumption": 0,
+          "production": 19
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          73
+        ],
+        "selection_groups": [
+          [
+            73
+          ]
+        ]
+      }
+    },
+    {
+      "id": 72,
+      "name": "Activity 72",
+      "duration": 2,
+      "resources_required": {
+        "3": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 6
+        },
+        "7": {
+          "consumption": 0,
+          "production": 19
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          73
+        ],
+        "selection_groups": [
+          [
+            73
+          ]
+        ]
+      }
+    },
+    {
+      "id": 73,
+      "name": "Activity 73",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 15
+        },
+        "7": {
+          "consumption": 0,
+          "production": 6
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          86
+        ],
+        "selection_groups": [
+          [
+            86
+          ]
+        ]
+      }
+    },
+    {
+      "id": 74,
+      "name": "Activity 74",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 7,
+          "production": 0
+        },
+        "7": {
+          "consumption": 20,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          75,
+          76,
+          77,
+          78
+        ],
+        "selection_groups": [
+          [
+            75
+          ],
+          [
+            76
+          ],
+          [
+            77
+          ],
+          [
+            78
+          ]
+        ]
+      }
+    },
+    {
+      "id": 75,
+      "name": "Activity 75",
+      "duration": 4,
+      "resources_required": {
+        "1": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 16,
+          "production": 0
+        },
+        "7": {
+          "consumption": 16,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          80,
+          79
+        ],
+        "selection_groups": [
+          [
+            79
+          ],
+          [
+            80
+          ]
+        ]
+      }
+    },
+    {
+      "id": 76,
+      "name": "Activity 76",
+      "duration": 5,
+      "resources_required": {
+        "1": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 9,
+          "production": 0
+        },
+        "7": {
+          "consumption": 14,
+          "production": 8
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          80,
+          79
+        ],
+        "selection_groups": [
+          [
+            80
+          ],
+          [
+            79
+          ]
+        ]
+      }
+    },
+    {
+      "id": 77,
+      "name": "Activity 77",
+      "duration": 1,
+      "resources_required": {
+        "1": 1
+      },
+      "resource_consumption": {
+        "7": {
+          "consumption": 5,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          80,
+          79
+        ],
+        "selection_groups": [
+          [
+            79
+          ],
+          [
+            80
+          ]
+        ]
+      }
+    },
+    {
+      "id": 78,
+      "name": "Activity 78",
+      "duration": 1,
+      "resources_required": {
+        "1": 2
+      },
+      "resource_consumption": {
+        "7": {
+          "consumption": 20,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          80,
+          79
+        ],
+        "selection_groups": [
+          [
+            80
+          ],
+          [
+            79
+          ]
+        ]
+      }
+    },
+    {
+      "id": 79,
+      "name": "Activity 79",
+      "duration": 2,
+      "resources_required": {
+        "1": 5
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 5,
+          "production": 0
+        },
+        "7": {
+          "consumption": 5,
+          "production": 5
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          84,
+          83,
+          82,
+          81
+        ],
+        "selection_groups": [
+          [
+            83
+          ],
+          [
+            82
+          ],
+          [
+            81
+          ],
+          [
+            84
+          ]
+        ]
+      }
+    },
+    {
+      "id": 80,
+      "name": "Activity 80",
+      "duration": 8,
+      "resources_required": {
+        "1": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 9,
+          "production": 0
+        },
+        "7": {
+          "consumption": 34,
+          "production": 8
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          84,
+          83,
+          82,
+          81
+        ],
+        "selection_groups": [
+          [
+            81
+          ],
+          [
+            82
+          ],
+          [
+            83
+          ],
+          [
+            84
+          ]
+        ]
+      }
+    },
+    {
+      "id": 81,
+      "name": "Activity 81",
+      "duration": 6,
+      "resources_required": {
+        "1": 5
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 8
+        },
+        "7": {
+          "consumption": 0,
+          "production": 23
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          85
+        ],
+        "selection_groups": [
+          [
+            85
+          ]
+        ]
+      }
+    },
+    {
+      "id": 82,
+      "name": "Activity 82",
+      "duration": 4,
+      "resources_required": {
+        "1": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 9
+        },
+        "7": {
+          "consumption": 0,
+          "production": 17
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          85
+        ],
+        "selection_groups": [
+          [
+            85
+          ]
+        ]
+      }
+    },
+    {
+      "id": 83,
+      "name": "Activity 83",
+      "duration": 8,
+      "resources_required": {
+        "1": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 7,
+          "production": 7
+        },
+        "7": {
+          "consumption": 0,
+          "production": 30
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          85
+        ],
+        "selection_groups": [
+          [
+            85
+          ]
+        ]
+      }
+    },
+    {
+      "id": 84,
+      "name": "Activity 84",
+      "duration": 10,
+      "resources_required": {
+        "1": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 17
+        },
+        "7": {
+          "consumption": 0,
+          "production": 17
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          85
+        ],
+        "selection_groups": [
+          [
+            85
+          ]
+        ]
+      }
+    },
+    {
+      "id": 85,
+      "name": "Activity 85",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 7
+        },
+        "7": {
+          "consumption": 0,
+          "production": 6
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          86
+        ],
+        "selection_groups": [
+          [
+            86
+          ]
+        ]
+      }
+    },
+    {
+      "id": 86,
+      "name": "Activity 86",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 54,
+          "production": 0
+        },
+        "7": {
+          "consumption": 51,
+          "production": 5
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          87,
+          88,
+          89,
+          91
+        ],
+        "selection_groups": [
+          [
+            87
+          ],
+          [
+            91
+          ],
+          [
+            88
+          ],
+          [
+            89
+          ]
+        ]
+      }
+    },
+    {
+      "id": 87,
+      "name": "Activity 87",
+      "duration": 9,
+      "resources_required": {
+        "3": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 28,
+          "production": 5
+        },
+        "7": {
+          "consumption": 27,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          96,
+          95,
+          92,
+          90
+        ],
+        "selection_groups": [
+          [
+            95
+          ],
+          [
+            96
+          ],
+          [
+            90
+          ],
+          [
+            92
+          ]
+        ]
+      }
+    },
+    {
+      "id": 88,
+      "name": "Activity 88",
+      "duration": 1,
+      "resources_required": {
+        "3": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 31,
+          "production": 13
+        },
+        "7": {
+          "consumption": 31,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          92,
+          90
+        ],
+        "selection_groups": [
+          [
+            90
+          ],
+          [
+            92
+          ]
+        ]
+      }
+    },
+    {
+      "id": 89,
+      "name": "Activity 89",
+      "duration": 8,
+      "resources_required": {
+        "3": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 56,
+          "production": 0
+        },
+        "7": {
+          "consumption": 21,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          94,
+          92
+        ],
+        "selection_groups": [
+          [
+            94
+          ],
+          [
+            92
+          ]
+        ]
+      }
+    },
+    {
+      "id": 90,
+      "name": "Activity 90",
+      "duration": 5,
+      "resources_required": {
+        "3": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 38,
+          "production": 13
+        },
+        "7": {
+          "consumption": 41,
+          "production": 7
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          93
+        ],
+        "selection_groups": [
+          [
+            93
+          ]
+        ]
+      }
+    },
+    {
+      "id": 91,
+      "name": "Activity 91",
+      "duration": 6,
+      "resources_required": {
+        "3": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 47,
+          "production": 0
+        },
+        "7": {
+          "consumption": 67,
+          "production": 8
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          92
+        ],
+        "selection_groups": [
+          [
+            92
+          ]
+        ]
+      }
+    },
+    {
+      "id": 92,
+      "name": "Activity 92",
+      "duration": 7,
+      "resources_required": {
+        "3": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 38,
+          "production": 10
+        },
+        "7": {
+          "consumption": 29,
+          "production": 9
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          97
+        ],
+        "selection_groups": [
+          [
+            97
+          ]
+        ]
+      }
+    },
+    {
+      "id": 93,
+      "name": "Activity 93",
+      "duration": 1,
+      "resources_required": {
+        "3": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 24,
+          "production": 0
+        },
+        "7": {
+          "consumption": 31,
+          "production": 10
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          100
+        ],
+        "selection_groups": [
+          [
+            97
+          ]
+        ]
+      }
+    },
+    {
+      "id": 94,
+      "name": "Activity 94",
+      "duration": 10,
+      "resources_required": {
+        "3": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 36,
+          "production": 0
+        },
+        "7": {
+          "consumption": 17,
+          "production": 6
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          97
+        ],
+        "selection_groups": [
+          [
+            97
+          ]
+        ]
+      }
+    },
+    {
+      "id": 95,
+      "name": "Activity 95",
+      "duration": 9,
+      "resources_required": {
+        "3": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 39,
+          "production": 0
+        },
+        "7": {
+          "consumption": 49,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          97
+        ],
+        "selection_groups": [
+          [
+            97
+          ]
+        ]
+      }
+    },
+    {
+      "id": 96,
+      "name": "Activity 96",
+      "duration": 10,
+      "resources_required": {
+        "3": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 32,
+          "production": 17
+        },
+        "7": {
+          "consumption": 66,
+          "production": 8
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          97
+        ],
+        "selection_groups": [
+          [
+            97
+          ]
+        ]
+      }
+    },
+    {
+      "id": 97,
+      "name": "Activity 97",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 32,
+          "production": 15
+        },
+        "7": {
+          "consumption": 43,
+          "production": 24
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          98
+        ],
+        "selection_groups": [
+          [
+            98
+          ]
+        ]
+      }
+    },
+    {
+      "id": 98,
+      "name": "Activity 98",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 10,
+          "production": 12
+        },
+        "7": {
+          "consumption": 51,
+          "production": 5
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          99,
+          100,
+          101,
+          102,
+          105
+        ],
+        "selection_groups": [
+          [
+            102
+          ],
+          [
+            99
+          ],
+          [
+            100
+          ],
+          [
+            105
+          ],
+          [
+            101
+          ]
+        ]
+      }
+    },
+    {
+      "id": 99,
+      "name": "Activity 99",
+      "duration": 6,
+      "resources_required": {
+        "5": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 33,
+          "production": 5
+        },
+        "7": {
+          "consumption": 31,
+          "production": 9
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          108,
+          104,
+          103
+        ],
+        "selection_groups": [
+          [
+            104
+          ],
+          [
+            103
+          ],
+          [
+            108
+          ]
+        ]
+      }
+    },
+    {
+      "id": 100,
+      "name": "Activity 100",
+      "duration": 3,
+      "resources_required": {
+        "5": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 26,
+          "production": 28
+        },
+        "7": {
+          "consumption": 24,
+          "production": 28
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          108,
+          104,
+          103
+        ],
+        "selection_groups": [
+          [
+            108
+          ],
+          [
+            104
+          ],
+          [
+            103
+          ]
+        ]
+      }
+    },
+    {
+      "id": 101,
+      "name": "Activity 101",
+      "duration": 1,
+      "resources_required": {
+        "5": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 13,
+          "production": 10
+        },
+        "7": {
+          "consumption": 21,
+          "production": 35
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          108,
+          106
+        ],
+        "selection_groups": [
+          [
+            106
+          ],
+          [
+            108
+          ]
+        ]
+      }
+    },
+    {
+      "id": 102,
+      "name": "Activity 102",
+      "duration": 1,
+      "resources_required": {
+        "5": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 42,
+          "production": 36
+        },
+        "7": {
+          "consumption": 17,
+          "production": 0
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          107,
+          106
+        ],
+        "selection_groups": [
+          [
+            107
+          ],
+          [
+            106
+          ]
+        ]
+      }
+    },
+    {
+      "id": 103,
+      "name": "Activity 103",
+      "duration": 6,
+      "resources_required": {
+        "5": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 22,
+          "production": 28
+        },
+        "7": {
+          "consumption": 21,
+          "production": 20
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          107
+        ],
+        "selection_groups": [
+          [
+            107
+          ]
+        ]
+      }
+    },
+    {
+      "id": 104,
+      "name": "Activity 104",
+      "duration": 1,
+      "resources_required": {
+        "5": 4
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 17,
+          "production": 29
+        },
+        "7": {
+          "consumption": 24,
+          "production": 21
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          106
+        ],
+        "selection_groups": [
+          [
+            106
+          ]
+        ]
+      }
+    },
+    {
+      "id": 105,
+      "name": "Activity 105",
+      "duration": 2,
+      "resources_required": {
+        "5": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 28,
+          "production": 35
+        },
+        "7": {
+          "consumption": 13,
+          "production": 42
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          106
+        ],
+        "selection_groups": [
+          [
+            106
+          ]
+        ]
+      }
+    },
+    {
+      "id": 106,
+      "name": "Activity 106",
+      "duration": 3,
+      "resources_required": {
+        "5": 4
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 25,
+          "production": 48
+        },
+        "7": {
+          "consumption": 14,
+          "production": 34
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          109
+        ],
+        "selection_groups": [
+          [
+            109
+          ]
+        ]
+      }
+    },
+    {
+      "id": 107,
+      "name": "Activity 107",
+      "duration": 3,
+      "resources_required": {
+        "5": 4
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 10,
+          "production": 15
+        },
+        "7": {
+          "consumption": 6,
+          "production": 21
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          109
+        ],
+        "selection_groups": [
+          [
+            109
+          ]
+        ]
+      }
+    },
+    {
+      "id": 108,
+      "name": "Activity 108",
+      "duration": 9,
+      "resources_required": {
+        "5": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 37,
+          "production": 14
+        },
+        "7": {
+          "consumption": 0,
+          "production": 42
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          109
+        ],
+        "selection_groups": [
+          [
+            109
+          ]
+        ]
+      }
+    },
+    {
+      "id": 109,
+      "name": "Activity 109",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 19,
+          "production": 33
+        },
+        "7": {
+          "consumption": 7,
+          "production": 22
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          110
+        ],
+        "selection_groups": [
+          [
+            110
+          ]
+        ]
+      }
+    },
+    {
+      "id": 110,
+      "name": "Activity 110",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {
+        "6": {
+          "consumption": 8,
+          "production": 55
+        },
+        "7": {
+          "consumption": 5,
+          "production": 28
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          111,
+          112,
+          114,
+          119,
+          120
+        ],
+        "selection_groups": [
+          [
+            120
+          ],
+          [
+            111
+          ],
+          [
+            119
+          ],
+          [
+            112
+          ],
+          [
+            114
+          ]
+        ]
+      }
+    },
+    {
+      "id": 111,
+      "name": "Activity 111",
+      "duration": 5,
+      "resources_required": {
+        "4": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 34
+        },
+        "7": {
+          "consumption": 0,
+          "production": 19
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          118,
+          115,
+          113
+        ],
+        "selection_groups": [
+          [
+            113
+          ],
+          [
+            115
+          ],
+          [
+            118
+          ]
+        ]
+      }
+    },
+    {
+      "id": 112,
+      "name": "Activity 112",
+      "duration": 7,
+      "resources_required": {
+        "4": 3
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 32
+        },
+        "7": {
+          "consumption": 7,
+          "production": 27
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          118,
+          117,
+          116
+        ],
+        "selection_groups": [
+          [
+            118
+          ],
+          [
+            116
+          ],
+          [
+            117
+          ]
+        ]
+      }
+    },
+    {
+      "id": 113,
+      "name": "Activity 113",
+      "duration": 3,
+      "resources_required": {
+        "4": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 60
+        },
+        "7": {
+          "consumption": 5,
+          "production": 65
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          117,
+          116
+        ],
+        "selection_groups": [
+          [
+            117
+          ],
+          [
+            116
+          ]
+        ]
+      }
+    },
+    {
+      "id": 114,
+      "name": "Activity 114",
+      "duration": 9,
+      "resources_required": {
+        "4": 4
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 10,
+          "production": 28
+        },
+        "7": {
+          "consumption": 0,
+          "production": 55
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          117,
+          116
+        ],
+        "selection_groups": [
+          [
+            116
+          ],
+          [
+            117
+          ]
+        ]
+      }
+    },
+    {
+      "id": 115,
+      "name": "Activity 115",
+      "duration": 8,
+      "resources_required": {
+        "4": 1
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 31
+        },
+        "7": {
+          "consumption": 0,
+          "production": 39
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          116
+        ],
+        "selection_groups": [
+          [
+            116
+          ]
+        ]
+      }
+    },
+    {
+      "id": 116,
+      "name": "Activity 116",
+      "duration": 10,
+      "resources_required": {
+        "4": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 70
+        },
+        "7": {
+          "consumption": 0,
+          "production": 30
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          121
+        ],
+        "selection_groups": [
+          [
+            121
+          ]
+        ]
+      }
+    },
+    {
+      "id": 117,
+      "name": "Activity 117",
+      "duration": 5,
+      "resources_required": {
+        "4": 4
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 40
+        },
+        "7": {
+          "consumption": 0,
+          "production": 24
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          121
+        ],
+        "selection_groups": [
+          [
+            121
+          ]
+        ]
+      }
+    },
+    {
+      "id": 118,
+      "name": "Activity 118",
+      "duration": 2,
+      "resources_required": {
+        "4": 4
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 20
+        },
+        "7": {
+          "consumption": 0,
+          "production": 61
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          121
+        ],
+        "selection_groups": [
+          [
+            121
+          ]
+        ]
+      }
+    },
+    {
+      "id": 119,
+      "name": "Activity 119",
+      "duration": 6,
+      "resources_required": {
+        "4": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 42
+        },
+        "7": {
+          "consumption": 0,
+          "production": 25
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          121
+        ],
+        "selection_groups": [
+          [
+            121
+          ]
+        ]
+      }
+    },
+    {
+      "id": 120,
+      "name": "Activity 120",
+      "duration": 10,
+      "resources_required": {
+        "4": 2
+      },
+      "resource_consumption": {
+        "6": {
+          "consumption": 0,
+          "production": 35
+        },
+        "7": {
+          "consumption": 0,
+          "production": 38
+        }
+      },
+      "precedences": {
+        "time_successors": [
+          121
+        ],
+        "selection_groups": [
+          [
+            121
+          ]
+        ]
+      }
+    },
+    {
+      "id": 121,
+      "name": "Supersink",
+      "duration": 0,
+      "resources_required": {},
+      "resource_consumption": {},
+      "precedences": {
+        "time_successors": [],
+        "selection_groups": []
+      }
+    }
+  ]
+}
